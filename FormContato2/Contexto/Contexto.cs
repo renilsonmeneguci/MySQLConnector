@@ -7,6 +7,7 @@ using FormContato2.Models;
 
 namespace FormContato2.Contexto
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class Contexto : DbContext
     {
         public Contexto()
