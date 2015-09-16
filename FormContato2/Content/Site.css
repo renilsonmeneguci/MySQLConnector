@@ -1,0 +1,125 @@
+﻿.jumbotron{
+	width: 550px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: auto; 
+	margin-right: auto;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px; 
+}
+
+.jumbo {
+    width: 475px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.text-danger {
+    text-align: right;
+    float: left;
+}
+
+.alert {
+    width: 550px;
+    text-align: left;
+    margin-top:5px;
+    background-color:lightblue;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.form-control{
+	margin-bottom: 5px;
+}
+
+p {
+    line-height: 75%;
+    color: gray;
+}
+
+body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    /*border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;*/
+    padding: 1em;
+    font:80%/1 sans-serif;
+}
+
+label {
+    float:left;
+    /*width:25%;*/
+    margin-left: 5px;
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;
+    font-weight:bold;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+    /*width: 450px;
+    background: #648E35;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    border-bottom-color: #999999;
+    border-right-color: #999999;
+    padding: 4px 8px;*/
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}

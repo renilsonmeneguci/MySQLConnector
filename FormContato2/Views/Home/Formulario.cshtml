@@ -1,0 +1,63 @@
+﻿@model FormContato2.Models.FormularioModel
+
+@{
+    ViewBag.Title = "Demonstração - Holdprint";
+    
+    using (Html.BeginForm())
+    {
+           <!-- <div class="alert">
+                /*@Html.ValidationSummary()*/
+            </div> -->
+    
+            <div class="jumbotron">
+                
+                <fieldset>
+                <legend>Solicitação de demonstração</legend>
+
+                    <div class="jumbo">
+                        <p>Preencha seus dados abaixo.</p>
+                        <p>Enviaremos para seu e-mail o link dos vídeos de demonstração</p>
+                    </div>
+
+                    <label for="Empresa">Empresa</label>
+                    @Html.ValidationMessageFor(x => x.Empresa, "", new { @class = "text-danger" })
+                    <input class="form-control" type="text" data-val="true" data-val-required="Informe o nome da empresa" id="Empresa" name="Empresa" placeholder="Empresa" autofocus/>
+                    
+                    <label for="Nome">Nome</label>
+                    @Html.ValidationMessageFor(x => x.Nome, "", new { @class = "text-danger" })
+                    <input class="form-control" type="text" data-val="true" data-val-required="Informe o seu nome" id="Nome" name="Nome" placeholder="Nome"/>
+                    
+                    @{
+                        var dicAttr = new Dictionary<string, object>
+                        {
+                            {"class", "form-control"},
+                            {"placeholder", "E-mail"}
+                        };
+                    }
+
+                    @Html.LabelFor(x => x.Email)
+                    @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+                    @Html.TextBoxFor(x => x.Email, dicAttr)
+                    <!--<label for="Email">E-mail:</label>
+                    <input class="form-control" type="email" data-val="true" data-val-required="Preencha o endereço de e-mail" id="Email" name="Email" placeholder="E-mail" value/>-->
+
+                    <label for="Telefone">Telefone</label>
+                    @Html.ValidationMessageFor(x => x.Telefone, "", new { @class = "text-danger" })
+                    <input class="form-control" type="text" data-val="true" data-val-required="Informe um telefone" id="Telefone" name="Telefone" placeholder="Telefone"/>
+
+                    <button class="btn btn-primary btn-block " type="submit" value="Enviar contato">
+                        Enviar contato
+                        <span class="glyphicon glyphicon-send"></span>
+                    </button>
+
+                </fieldset>
+            </div>
+            
+    }
+  
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        @Styles.Render("~/Content/bootstrap")
+        @Scripts.Render("~/bundles/bootstrap")
+    }
+}
